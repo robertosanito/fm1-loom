@@ -168,8 +168,8 @@ void app_splash(void)
         for (int i = 0; i < 8; i++)                  /* the warp: eight threads, each over and under the weft */
             for (int j = 0; j < 12; j++)
                 cv_rect(56 + i * 16, 44 + j * 3, 8, (i + j) & 1 ? 3 : 2, (i + j) & 1 ? t->ink[i] : t->panel2);
-        w = text_w(&FONT_S, "a pocket groovebox");
-        cv_text((240 - w) / 2, 76, &FONT_S, "a pocket groovebox", t->dim);
+        w = text_w(&FONT_S, "Welcome Rober");
+        cv_text((240 - w) / 2, 76, &FONT_S, "Welcome Rober", t->dim);
     }
     cv_blit(0, 76);
 }
